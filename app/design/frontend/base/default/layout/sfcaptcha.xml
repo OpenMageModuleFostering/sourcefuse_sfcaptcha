@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <!--<sfcaptcha_index_index>
+        <reference name="content">
+            <block type="sfcaptcha/sfcaptcha" name="sfcaptcha" template="sfcaptcha/sfcaptcha.phtml" />
+        </reference>
+    </sfcaptcha_index_index>-->
+    <contacts_index_index>
+		 <reference name="head">
+			 <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><type>skin_js</type><name helper="sfcaptcha/data/getJqueryContactUs"/><params/><if/></action>
+			 
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_css</type>
+                <name helper="sfcaptcha/data/getCssContactus"/><params/><if/>
+            </action>
+           
+			<action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getBrowserJsContactus"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiContactus"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiTouchContactus"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getQapTchaJsContactus"/><params/><if/>
+            </action>
+        </reference>
+        	
+        <reference name="content">
+            <reference name="contactForm">
+                <action method="setTemplate" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><template>sfcaptcha/contactus.phtml</template></action>
+            </reference>
+        </reference>
+    </contacts_index_index>
+    
+    <customer_account_login>
+		 <reference name="head">
+			 <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><type>skin_js</type><name helper="sfcaptcha/data/getJqueryCustomerLogin"/><params/><if/></action>
+			 
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_css</type>
+                <name helper="sfcaptcha/data/getCssCustomerLogin"/><params/><if/>
+            </action>
+           
+			<action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getBrowserJsCustomerLogin"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiCustomerLogin"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiTouchCustomerLogin"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getQapTchaJsCustomerLogin"/><params/><if/>
+            </action>
+        </reference>
+        	
+        <reference name="content">
+            <reference name="customer_form_login">
+                <action method="setTemplate" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><template>sfcaptcha/login.phtml</template></action>
+            </reference>
+        </reference>
+    </customer_account_login>
+    
+     <customer_account_create>
+		 <reference name="head">
+			 <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><type>skin_js</type><name helper="sfcaptcha/data/getJqueryCustomerSignup"/><params/><if/></action>
+			 
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_css</type>
+                <name helper="sfcaptcha/data/getCssCustomerSignup"/><params/><if/>
+            </action>
+           
+			<action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getBrowserJsCustomerSignup"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiCustomerSignup"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiTouchCustomerSignup"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getQapTchaJsCustomerSignup"/><params/><if/>
+            </action>
+        </reference>
+        	
+        <reference name="content">
+            <reference name="customer_form_register">
+                <action method="setTemplate" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><template>sfcaptcha/register.phtml</template></action>
+            </reference>
+        </reference>
+    </customer_account_create>
+    
+      <review_product_list>
+		 <reference name="head">
+			 <action method="removeItem"><type>skin_js</type><name>js/app.js</name></action>
+			  <action method="addItem"><type>skin_js</type><name>js/sfcaptcha/app.js</name></action>
+			 <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><type>skin_js</type><name helper="sfcaptcha/data/getJqueryProductReview"/><params/><if/></action>
+			 
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_css</type>
+                <name helper="sfcaptcha/data/getCssProductReview"/><params/><if/>
+            </action>
+           
+			<action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getBrowserJsProductReview"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiProductReview"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getJqueryUiTouchProductReview"/><params/><if/>
+            </action>
+            
+             <action method="addItem" ifconfig="sourcefuse_section/sourcefuse_group/enabled">
+                <type>skin_js</type>
+                <name helper="sfcaptcha/data/getQapTchaJsProductReview"/><params/><if/>
+            </action>
+        </reference>
+        	
+        <reference name="content">
+            <reference name="product.review.form">
+                <action method="setTemplate" ifconfig="sourcefuse_section/sourcefuse_group/enabled"><template>sfcaptcha/review.phtml</template></action>
+            </reference>
+        </reference>
+    </review_product_list>
+</layout> 

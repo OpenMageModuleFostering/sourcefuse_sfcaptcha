@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <sourcefuse_tab module="sfcaptcha" translate="label">
+            <label>Sourcefuse Extensions</label>
+            <sort_order>100</sort_order>
+        </sourcefuse_tab>
+    </tabs>
+    <sections>
+        <sourcefuse_section module="sfcaptcha" translate="label">
+            <label>Slider Captcha</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>sourcefuse_tab</tab>
+            <groups>
+                <sourcefuse_group translate="label">
+                    <label>General</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label" module="sfcaptcha">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Enable / Disable extension</comment>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enabled>
+                        
+                         <contactus translate="label" module="sfcaptcha">
+                            <label>Contact Us</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Enable / Disable slider captcha for contact us</comment>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </contactus>
+                        
+                         <signin translate="label" module="sfcaptcha">
+                            <label>Customer Signin</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Enable / Disable slider captcha for customer signin</comment>
+                            <sort_order>39</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </signin>
+                        
+                         <signup translate="label" module="sfcaptcha">
+                            <label>Customer Signup</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Enable / Disable slider captcha for customer signup</comment>
+                            <sort_order>49</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </signup>
+                        
+                        <review translate="label" module="sfcaptcha">
+                            <label>Product Review</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>Enable / Disable slider captcha for product review</comment>
+                            <sort_order>59</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </review>
+                    </fields>
+                </sourcefuse_group>
+            </groups>
+        </sourcefuse_section>
+    </sections>
+</config>
