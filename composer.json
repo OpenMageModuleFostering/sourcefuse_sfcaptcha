@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Sourcefuse_Sfcaptcha",
+    "name": "openmage-module-fostering\/sourcefuse_sfcaptcha",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "It is an easy-to-use, simple and intuitive captcha system. It needs human action instead of to read a hard text.",
     "authors": [
